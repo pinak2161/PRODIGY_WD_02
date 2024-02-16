@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/stopwatch.png" type="image/x-icon">
+    <link rel="stylesheet" href="assests/style.css">
+    <script src="assests/app.js" defer></script>
+    <title> Stopwatch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <p>
+                <span class="minute text" id="min">00</span>
+                <span>:</span>
+                <span class="seconds text" id="seconds">00</span>
+                <span>.</span>
+                <span class="tens text" id="tens">00</span>
+            </p>
+        </div>
+        <div class="buttons" id="btn-div">
+            <button class="btn-start" id="start" onclick="startStop()">START</button>
+            <button class="btn-reset" id="reset" onclick="resetTimer()">RESET</button>
+            <button class="btn-lap" id="lap" onclick="recordLap()">LAP</button>
+        </div>
+        <ul class="lap-times" id="lapTimes"></ul>
+    </div>
+</body>
+</html>

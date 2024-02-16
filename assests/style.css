@@ -1,0 +1,88 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+    color: #fff;
+    background-image: url("background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    background-color: rgba(65, 65, 112, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adding a box shadow for depth */
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 2rem 3rem;
+    }
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+.text {
+    font-size: 4rem;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #222242;
+    padding: 10px 38px;
+    border: 1px solid #A9A9A9;
+    border-radius: 28px;
+    cursor: pointer;
+    color: #fff;
+    transition: all .2s ease;
+    outline: 0;
+    margin: .5rem;
+}
+
+button:active {
+    background-color: #fff;
+    color: #000;
+}
+
+.lap-times {
+    font-size: 1.5rem;
+    margin-bottom: 10px,  bold;
+    color: black;
+   
+}
+
+.lap-times li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 100%;
+   
+}
